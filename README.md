@@ -1,74 +1,93 @@
-🫁 Pneumonia Detection from Chest X-Ray Images using Deep Learning
+# 🫁 Pneumonia Detection from Chest X-Ray Images using Deep Learning
 
-An end-to-end deep learning system for automated pneumonia detection from chest X-ray images using ResNet50 transfer learning and Grad-CAM explainability.
+An end-to-end deep learning system for **automated pneumonia detection** from chest X-ray images using **ResNet50 transfer learning** and **Grad-CAM explainability**.
 
-📌 Project Overview
+---
+
+## 📌 Project Overview
 
 Pneumonia is a serious respiratory infection that can be life-threatening if not detected early. This project builds an AI-based medical image classification system that can assist in identifying pneumonia from chest X-ray scans.
 
-The system leverages transfer learning with a pre-trained ResNet50 model and incorporates Grad-CAM visual explanations to highlight lung regions influencing the model’s decision.
+The system leverages **transfer learning** with a pre-trained ResNet50 model and incorporates **Grad-CAM visual explanations** to highlight lung regions influencing the model’s decision.
 
-🧠 Key Features
+---
 
-• Automated pneumonia detection from X-ray images
-• Medical image classification using deep learning
-• Transfer learning with ResNet50
-• Fine-tuning for improved performance
-• Full model evaluation with medical metrics
-• Grad-CAM visual explanations for interpretability
+## 🧠 Key Features
 
-🗂 Dataset
+- Automated pneumonia detection from X-ray images  
+- Medical image classification using deep learning  
+- Transfer learning with ResNet50  
+- Fine-tuning for improved performance  
+- Full model evaluation with medical metrics  
+- Grad-CAM visual explanations for interpretability  
 
-Source: Kaggle Chest X-Ray Pneumonia Dataset
-Providers: NIH Clinical Center & Guangzhou Women and Children's Medical Center
+---
+
+## 🗂 Dataset
+
+**Source:** Kaggle Chest X-Ray Pneumonia Dataset  
+**Providers:** NIH Clinical Center & Guangzhou Women and Children's Medical Center  
 
 The dataset contains chest X-ray images categorized into:
 
-• Normal
-• Pneumonia
+- **Normal**  
+- **Pneumonia**
 
-⚠ Dataset is not included in this repository due to size and licensing.
+> ⚠️ Dataset is not included in this repository due to size and licensing.
 
-🏗 Model Architecture
+---
 
-• Base Model: ResNet50 (ImageNet pretrained)
-• Input Size: 224 × 224
-• Transfer Learning with frozen base layers
-• Fine-tuning of top convolutional layers
-• Output Layer: Binary classification (Normal vs Pneumonia)
+## 🏗 Model Architecture
 
-⚙️ Technologies Used
+- Base Model: **ResNet50 (ImageNet pretrained)**  
+- Input Size: **224 × 224**  
+- Transfer Learning with frozen base layers  
+- Fine-tuning of top convolutional layers  
+- Output Layer: Binary classification (Normal vs Pneumonia)
 
-• Python
-• TensorFlow / Keras
-• NumPy, Matplotlib, Seaborn
-• OpenCV
-• Google Colab
+---
 
-📊 Model Evaluation
+## ⚙️ Technologies Used
+
+- Python  
+- TensorFlow / Keras  
+- NumPy, Matplotlib, Seaborn  
+- OpenCV  
+- Google Colab  
+
+---
+
+## 📊 Model Evaluation
 
 The model was evaluated on an unseen test set using:
 
-• Accuracy
-• Precision
-• Recall (Sensitivity)
-• Specificity
-• Confusion Matrix
-• ROC Curve (AUC)
+- Accuracy  
+- Precision  
+- Recall (Sensitivity)  
+- Specificity  
+- Confusion Matrix  
+- ROC Curve (AUC)
 
-Medical emphasis was placed on high recall for pneumonia cases to reduce false negatives.
+Medical emphasis was placed on **high recall for pneumonia cases** to reduce false negatives.
 
-🔬 Model Explainability (Grad-CAM)
+---
+
+## 🔬 Model Explainability (Grad-CAM)
 
 Grad-CAM was used to visualize which lung regions influenced the model’s predictions.
 
-🧪 Pneumonia Case
+### 🧪 Pneumonia Case
+![GradCAM Pneumonia](gradcam_results/gradcam_pneumonia.png)
 
-🧪 Normal Case
+### 🧪 Normal Case
+![GradCAM Normal](gradcam_results/gradcam_normal.png)
 
 These heatmaps show the model focuses on clinically relevant lung areas, increasing trust and transparency.
 
-📁 Repository Structure
+---
+## 📁 Repository Structure
+
+```
 notebooks/
 │
 ├── 01_Model_Training_Pneumonia.ipynb
@@ -79,29 +98,40 @@ notebooks/
 gradcam_results/
 ├── gradcam_pneumonia.png
 └── gradcam_normal.png
+```
 
-▶️ How to Run
+---
 
-1️.Download the dataset from Kaggle
-2️.Place dataset in Google Drive or local path
-3️.Run notebooks in order:
-• Model Training
-• Fine-Tuning
-• Evaluation
-• Grad-CAM Explainability
+## ▶️ How to Run
 
-🎯 Applications
+1. Download the dataset from Kaggle  
+2. Place the dataset in Google Drive or your local path  
+3. Run the notebooks in this order:
 
-• AI-assisted pneumonia screening
-• Medical image analysis research
-• Healthcare AI systems
-• Clinical decision-support tools
+   - 01_Model_Training_Pneumonia.ipynb  
+   - 01B_FineTuning_Continuation.ipynb  
+   - 02_Model_Evaluation.ipynb  
+   - 03_GradCAM_Explainability.ipynb  
 
-🚀 Future Improvements
+---
 
-• Train on larger, more diverse datasets
-• Multi-class classification (viral vs bacterial pneumonia)
-• Deployment as a web app for clinical use
-• Ensemble models for improved robustness
+## 🎯 Applications
+
+- AI-assisted pneumonia screening  
+- Medical image analysis research  
+- Healthcare AI systems  
+- Clinical decision-support tools  
+
+---
+
+## 🚀 Future Improvements
+
+- Train on larger, more diverse datasets  
+- Multi-class classification (viral vs bacterial pneumonia)  
+- Deployment as a web app for clinical use  
+- Ensemble models for improved robustness  
+
+---
 
 ⭐ If you found this project interesting, consider giving it a star!
+
