@@ -71,6 +71,11 @@ The model was evaluated on an unseen test set using:
 Medical emphasis was placed on **high recall for pneumonia cases** to reduce false negatives.
 
 ---
+### 📊 Confusion Matrix
+![Confusion Matrix](gradcam_results/confusion_matrix.png)
+
+### 📈 ROC Curve
+![ROC Curve](gradcam_results/roc_curve.png)
 
 ## 🔬 Model Explainability (Grad-CAM)
 
